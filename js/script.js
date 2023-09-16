@@ -5,7 +5,7 @@ $(document).ready(function () {
     pagination: false,
   })
   var typed = new Typed('.typed', {
-    strings: ['Software Engineer.', 'Web Developer.', 'Student.'],
+    strings: ['Software engineer', 'Enthusiasts'],
     typeSpeed: 70,
     loop: true,
     startDelay: 1000,
@@ -48,5 +48,14 @@ $(document).ready(function () {
   $('.counter').countUp({
     time: 2000,
     delay: 10,
+  })
+  $('[data-fancybox]').fancybox()
+  $('.items').isotope({
+    filter: '*',
+    animationOptions: {
+      duration: 1500,
+      easing: 'linear',
+      queue: false
+    }
   })
 })
